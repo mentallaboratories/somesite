@@ -44,7 +44,7 @@
 
         <!-- Заголовок -->
         <h1 class="heading">
-            SkoolTimez-index
+            SkoolTimez-portfolio
         </h1>
 
     </a>
@@ -57,16 +57,32 @@
             <!-- елемент списку -->
             <li class="card">
                 <!-- посилання на головну сторінку -->
+                <h3 class="heading">
+                    index page
+                </h3>
                 <a href="index.html" class="nav link"><h2>Домашня сторінка.</h2></a>
             </li>
             <li class="card">
+                <h3 class="heading">
+                    project gallery
+                </h3>
                 <!-- посилання на сторінку портфоліо -->
                 <a href="portfolio.html" class="nav link"><h2>Моє портфоліо.</h2></a>
             </li>
             <li class="card">
-                <!-- посилання на галерею робіт -->
+                <h3 class="heading">
+                    page_gode.html 
+                </h3>
+                <!-- посилання на сторінку коду -->
                 <a href="page_code.html" class="nav link"><h2>Код сторінки.</h2></a>
             </li>
+
+            <li class="card">
+                <!-- посилання на галерею робіт -->
+                vscode index
+                <a href="404.html" class="nav link"><h2>Сай</h2></a>
+            </li>
+            
             
         </ul>
     </nav>
@@ -78,18 +94,69 @@
         <!-- цей блок зазвичай містить основну інформацію сайту -->
         <hero class="section">
             <div class="container">
-                <article class="article">
-                    <div class="image">
-                        <img src="./images/PrtScr/devtools-inspect--index_html.jpg" alt="image">
-                    </div>
-                    <div class="text">
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam, accusamus non ab porro atque nostrum cupiditate cum at quis vitae nulla odit obcaecati eveniet recusandae nesciunt totam nemo quia nam!</p>
-                    </div>
-                </article>
+
+
+                <!-- Галерея практикумів - невпорядкований список-->
+                <ul class="cardset">
+
+                     <!-- картка практикума "404 chrome-find information" -->
+                     <li class="card">
+                        <a class="link" href="404.html">isNotFound</a>
+                           <div class="image">
+                               <img src="./images/PrtScr/chrome-wiki-404.jpg" alt="image">
+                           </div>
+                    </li>
+
+                     <!-- картка практикума index chrome devtools-->
+                     <li class="card">
+                        <!-- посилання на файл практикуму адреса 404 - сторінка не існує-->
+                        <a class="link" href="index.html">index go home</a>
+                        <div class="image">
+                            <img src="./images/PrtScr/devtools-inspect--index_html.jpg" alt="image">
+                        </div>
+                    </li>
+
+
+
+                    <!-- картка практикума "page code " -->
+                    <li class="card">
+                        <a class="link" href="page_code.html">Pagecode devtools HTML CSS></a>
+                        <div class="image">
+                            <img src="./images/PrtScr/devtools-html-css-pagecode_html.jpg" alt="image">
+                        </div>
+                    </li>
+
+                    
+
+
+                    
+
+
+                     <!-- картка практикума -->
+                     <li class="card">
+                        <!-- посилання на файл практикуму адреса 404 - сторінка не існує-->
+                        <a class="link" href="page_code.html">Pagecode</a>
+                        <div class="image">
+                            <img src="./images/PrtScr/devtools-html-css-pagecode_html.jpg" alt="image">
+                        </div>
+                    </li>
+
+                     <!-- картка практикума -->
+                     <li class="card">
+                        <!-- посилання на файл практикуму адреса 404 - сторінка не існує-->
+                        <a class="link" href="404.html">Somelink</a>
+                        <div class="image">
+                            <img src="./images/PrtScr/devtools-html-css-pagecode_html.jpg" alt="image">
+                        </div>
+                    </li>
+                </ul>
+
+
                 <svg class="icon" width="48" height="48">
                     <use href="./images/icon.svg#icon-avaAlice"></use>
                 </svg>
-            </div>     
+            </div>
+            
         </hero>
     </main>
     <footer>

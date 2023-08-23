@@ -28,7 +28,7 @@
 <body>
     <!-- створи три основні секції сайту header, main, footer -->
     <!-- секція заголовок має клас section -->
-    <header class="section">
+    <header class="section" style="background-color: rgb(104, 137, 228); border: 1px dotted green;">
 
 
         <!-- контейнер -->
@@ -37,18 +37,18 @@
  <!-- цей блок зазвичай містить логотип та меню -->
     <!-- Логотип посилання на головну сторінку-->
     
-
+    <code class="code" style="background-color: rgb(7, 68, 237); color: aliceblue;">&lt!-- this is a site logo--&gt
+   </code>
         
 
     <a href="index.html" class="logo link">
-
-        <!-- Заголовок -->
-        <h1 class="heading">
-            SkoolTimez-portfolio
+        <h1 class="logo">
+            SomeSite
         </h1>
 
     </a>
-    
+    <code class="code" style="background-color: rgb(7, 68, 237); color: aliceblue;">&lt!-- this is a navmenu--&gt
+    </code>
     <!-- меню навігації -->
     <nav class="nav">
         <!-- не маркований список -->
@@ -57,45 +57,53 @@
             <!-- елемент списку -->
             <li class="card">
                 <!-- посилання на головну сторінку -->
-                <h3 class="heading">
-                    index page
-                </h3>
-                <a href="index.html" class="nav link"><h2>Домашня сторінка.</h2></a>
+                <a href="index.html" class="nav link nav-main"><h2>Домашня сторінка.</h2></a>
             </li>
             <li class="card">
-                <h3 class="heading">
-                    project gallery
-                </h3>
                 <!-- посилання на сторінку портфоліо -->
-                <a href="portfolio.html" class="nav link"><h2>Моє портфоліо.</h2></a>
+                <a href="portfolio.html" class="nav link nav-main"><h2>Моє портфоліо.</h2></a>
             </li>
             <li class="card">
-                <h3 class="heading">
-                    page_gode.html 
-                </h3>
-                <!-- посилання на сторінку коду -->
-                <a href="page_code.html" class="nav link"><h2>Код сторінки.</h2></a>
+                <!-- посилання на галерею робіт -->
+                <a href="page_code.html" class="nav link nav-projects"><h2>Код сторінки.</h2></a>
+            </li>
+            <li class="card">
+                <!-- посилання на галерею робіт -->
+                <a href=" https://mentallaboratories.github.io/somesite/" class="nav link nav-projects" target="_blank"><h2>Сайт на GitHub</h2></a>
             </li>
 
             <li class="card">
                 <!-- посилання на галерею робіт -->
-                vscode index
-                <a href="404.html" class="nav link"><h2>Сай</h2></a>
+                <a href=" https://www.w3schools.com/" class="nav link nav-projects" target="_blank"><h2>Самостійне навчання з w3schools</h2></a>
             </li>
-            
+
+            <li class="card">
+                <!-- посиланн -->
+                <a href="article.html" class="nav link nav-projects" target="_blank"><h2>Компонент 'стаття' -  article.html</h2></a>
+            </li>
+
+            <li class="card">
+                <!-- посилання на блок логотип -->
+                <a href="/logo/logo.html" class="nav link nav-projects" target="_blank"><h2>Компонент 'логотип' - logo.html</h2></a>
+            </li>
+           
             
         </ul>
     </nav>
 
         </div>
-
     </header>
     <main>
         <!-- цей блок зазвичай містить основну інформацію сайту -->
-        <hero class="section">
+        <section class="section">
             <div class="container">
-
-
+                    <h2 class="heading">
+                        Portfolio of projects
+                    </h2>
+                 
+                </div>  
+                <h3>IT cases</h3>
+                
                 <!-- Галерея практикумів - невпорядкований список-->
                 <ul class="cardset">
 
@@ -110,20 +118,22 @@
                      <!-- картка практикума index chrome devtools-->
                      <li class="card">
                         <!-- посилання на файл практикуму адреса 404 - сторінка не існує-->
-                        <a class="link" href="index.html">index go home</a>
+                        <a class="link" href="index.html">
                         <div class="image">
                             <img src="./images/PrtScr/devtools-inspect--index_html.jpg" alt="image">
                         </div>
+                        Chrome -&gt ... &gt Розширені &gt Інструменти розробника <key>Ctrl</key>+<key>Shift</key>+<key>I</key></a>
                     </li>
 
 
 
                     <!-- картка практикума "page code " -->
                     <li class="card">
-                        <a class="link" href="page_code.html">Pagecode devtools HTML CSS></a>
+                        <a class="link" href="page_code.html">
                         <div class="image">
                             <img src="./images/PrtScr/devtools-html-css-pagecode_html.jpg" alt="image">
                         </div>
+                        Pagecode devtools HTML CSS></a>
                     </li>
 
                     
@@ -134,20 +144,23 @@
 
                      <!-- картка практикума -->
                      <li class="card">
-                        <!-- посилання на файл практикуму адреса 404 - сторінка не існує-->
-                        <a class="link" href="page_code.html">Pagecode</a>
+                        <!-- VSCode знімок екрану з сайтом-->
+                        <a class="link" href="page_code.html">
                         <div class="image">
-                            <img src="./images/PrtScr/devtools-html-css-pagecode_html.jpg" alt="image">
+                            <img src="./images/PrtScr/VScode-index_html.jpg" alt="image">
                         </div>
+                        Pagecode</a>
                     </li>
 
                      <!-- картка практикума -->
                      <li class="card">
-                        <!-- посилання на файл практикуму адреса 404 - сторінка не існує-->
-                        <a class="link" href="404.html">Somelink</a>
+                        <!--PS підготовка растрових зображень до роботи -->
+                        <h4>PrtSc</h4>
+                        <a class="link" href="404.html">
                         <div class="image">
-                            <img src="./images/PrtScr/devtools-html-css-pagecode_html.jpg" alt="image">
+                            <img src="./images/PrtScr/PS-ctrlN_scrnShot.jpg" alt="image">
                         </div>
+                        Learn how to save PrtSc images with PS</a>
                     </li>
                 </ul>
 
@@ -157,7 +170,7 @@
                 </svg>
             </div>
             
-        </hero>
+        </section>
     </main>
     <footer>
         <!-- цей блок зазвичай містить довідкову інформацію та контакти -->

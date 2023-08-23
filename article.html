@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- Напиши заголовок, який писатиметься на вкладці браузера -->
-    <title>homepage</title>
+    <title>logo</title>
 
 <!-- Прив'язка Шрифтів GoogleFonts -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,79 +19,54 @@
         href="https://fonts.googleapis.com/css2?family=Finger+Paint&family=Freckle+Face&family=IBM+Plex+Mono:wght@400;600&family=Montserrat:wght@400;600&family=Pangolin&display=swap"
         rel="stylesheet">
 
-<!-- Прив'язка стилів css -->
-<link rel="stylesheet" href="./css/normalize.css">
-<link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/main.css">
+<!-- Прив'язка зовнішніх стилів css  External CSS-->
+<link rel="stylesheet" href="../css/normalize.css">
+<link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/logo.css">
+
+<!--Внутрішній стиль Internal CSS !!!!!!!!!!!!!!!!! -->
+
+    <!-- <style>
+        div {
+          background: rgb(0, 128, 0);
+        }
+        
+        div.first {
+          background: rgba(0, 128, 0, 0.1);
+        }
+        
+        div.second {
+          background: rgba(0, 128, 0, 0.3);
+        }
+        
+        div.third {
+          background: rgba(0, 128, 0, 0.6);
+        }
+        </style> -->
 </head>
     <!-- тіло сайту містить інформацію для фронтенду -->
 <body>
     <!-- створи три основні секції сайту header, main, footer -->
     <!-- секція заголовок має клас section -->
-    <header class="section">
+    <section class="section">
 
 
         <!-- контейнер -->
         <div class="container">
-
- <!-- цей блок зазвичай містить логотип та меню -->
-    <!-- Логотип посилання на головну сторінку-->
-    
-
-        
+<!-- посилання на домашню сторінку -->
 
     <a href="index.html" class="logo link">
         <h1 class="heading">
-            SkoolTimez-index
+            SkoolTimez
         </h1>
 
     </a>
-    
-    <!-- меню навігації -->
-    <nav class="nav">
-        <!-- не маркований список -->
-        <ul class="cardset">
-            
-            <!-- елемент списку -->
-            <li class="card">
-                <!-- посилання на головну сторінку -->
-                <a href="index.html" class="nav link"><h2>Домашня сторінка.</h2></a>
-            </li>
-            <li class="card">
-                <!-- посилання на сторінку портфоліо -->
-                <a href="portfolio.html" class="nav link"><h2>Моє портфоліо.</h2></a>
-            </li>
-            <li class="card">
-                <!-- посилання на галерею робіт -->
-                <a href="page_code.html" class="nav link"><h2>Код сторінки.</h2></a>
-            </li>
-            <li class="card">
-                <!-- посилання на галерею робіт -->
-                <a href=" https://mentallaboratories.github.io/somesite/" class="nav link" target="_blank"><h2>Сайт на GitHub</h2></a>
-            </li>
-
-            <li class="card">
-                <!-- посилання на галерею робіт -->
-                <a href=" https://www.w3schools.com/" class="nav link" target="_blank"><h2>Самостійне навчання з w3schools</h2></a>
-            </li>
-
-            <li class="card">
-                <!-- посилання на галерею робіт -->
-                <a href="article.html" class="nav link" target="_blank"><h2>Компонент 'стаття' -  Article.html</h2></a>
-            </li>
-
-            <li class="card">
-                <!-- посилання на галерею робіт -->
-                <a href="logo.html" class="nav link" target="_blank"><h2>Логотип - logo.html</h2></a>
-            </li>
-           
-            
-        </ul>
-    </nav>
+  
 
         </div>
 
-    </header>
+    </section>
     <main>
         <section class="section">
             <div class="container">
@@ -123,7 +98,6 @@
     </footer>
 </body>
 </html>
-
 
 
 

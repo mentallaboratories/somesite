@@ -23,12 +23,25 @@
 <link rel="stylesheet" href="./css/normalize.css">
 <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/main.css">
+
+
+    <style>
+
+
+
+    </style>
 </head>
     <!-- тіло сайту містить інформацію для фронтенду -->
 <body>
     <!-- створи три основні секції сайту header, main, footer -->
     <!-- секція заголовок має клас section -->
-    <header class="section">
+
+ 
+
+    <code class="code" style="background-color: rgb(7, 68, 237); border: 1px dotted green; color: aliceblue;">&lt!--rootfolder index.html HTML . Comments in html. code tag
+         Header starts here ...--&gt
+    </code>
+    <header class="section" style="background-color: rgb(104, 137, 228); border: 1px dotted green;">
 
 
         <!-- контейнер -->
@@ -37,16 +50,18 @@
  <!-- цей блок зазвичай містить логотип та меню -->
     <!-- Логотип посилання на головну сторінку-->
     
-
+    <code class="code" style="background-color: rgb(7, 68, 237); color: aliceblue;">&lt!-- this is a site logo--&gt
+   </code>
         
 
     <a href="index.html" class="logo link">
-        <h1 class="heading">
-            SkoolTimez-index
+        <h1 class="logo">
+            SomeSite
         </h1>
 
     </a>
-    
+    <code class="code" style="background-color: rgb(7, 68, 237); color: aliceblue;">&lt!-- this is a navmenu--&gt
+    </code>
     <!-- меню навігації -->
     <nav class="nav">
         <!-- не маркований список -->
@@ -55,34 +70,34 @@
             <!-- елемент списку -->
             <li class="card">
                 <!-- посилання на головну сторінку -->
-                <a href="index.html" class="nav link"><h2>Домашня сторінка.</h2></a>
+                <a href="index.html" class="nav link nav-main"><h2>Домашня сторінка.</h2></a>
             </li>
             <li class="card">
                 <!-- посилання на сторінку портфоліо -->
-                <a href="portfolio.html" class="nav link"><h2>Моє портфоліо.</h2></a>
+                <a href="portfolio.html" class="nav link nav-main"><h2>Моє портфоліо.</h2></a>
             </li>
             <li class="card">
                 <!-- посилання на галерею робіт -->
-                <a href="page_code.html" class="nav link"><h2>Код сторінки.</h2></a>
+                <a href="page_code.html" class="nav link nav-projects"><h2>Код сторінки.</h2></a>
             </li>
             <li class="card">
                 <!-- посилання на галерею робіт -->
-                <a href=" https://mentallaboratories.github.io/somesite/" class="nav link" target="_blank"><h2>Сайт на GitHub</h2></a>
-            </li>
-
-            <li class="card">
-                <!-- посилання на галерею робіт -->
-                <a href=" https://www.w3schools.com/" class="nav link" target="_blank"><h2>Самостійне навчання з w3schools</h2></a>
+                <a href=" https://mentallaboratories.github.io/somesite/" class="nav link nav-projects" target="_blank"><h2>Сайт на GitHub</h2></a>
             </li>
 
             <li class="card">
                 <!-- посилання на галерею робіт -->
-                <a href="article.html" class="nav link" target="_blank"><h2>Компонент 'стаття' -  Article.html</h2></a>
+                <a href=" https://www.w3schools.com/" class="nav link nav-projects" target="_blank"><h2>Самостійне навчання з w3schools</h2></a>
             </li>
 
             <li class="card">
-                <!-- посилання на галерею робіт -->
-                <a href="/logo/logo.html" class="nav link" target="_blank"><h2>Логотип - logo.html</h2></a>
+                <!-- посиланн -->
+                <a href="article.html" class="nav link nav-projects" target="_blank"><h2>Компонент 'стаття' -  article.html</h2></a>
+            </li>
+
+            <li class="card">
+                <!-- посилання на блок логотип -->
+                <a href="/logo/logo.html" class="nav link nav-projects" target="_blank"><h2>Компонент 'логотип' - logo.html</h2></a>
             </li>
            
             
@@ -90,27 +105,53 @@
     </nav>
 
         </div>
-
     </header>
     <main>
         <!-- цей блок зазвичай містить основну інформацію сайту -->
-        <hero class="section">
+        <code class="code" style="background-color: rgb(7, 68, 237); color: aliceblue;">&lt!-- this is a hero section--&gt
+        </code>
+
+        <hero class="section hero">
             <div class="container">
-                <article class="article">
+                <h2 class="heading">
+                    Welcome! Develop your skills
+                </h2>
+
+
+<!-- skillset -->
+
+                <ul>
+                    <li>Time management</li>
+                    <li>Problem solving</li>
+                    <li>Learning</li>
+                    <li>Working with hands</li>
+                    <li>IT</li>
+                </ul>
+
+                    <!-- skillset-images -->
                     <div class="image">
-                        <img src="./images/PrtScr/devtools-inspect--index_html.jpg" alt="image">
+                        <img src="./images/comp-planner.png" alt="image">
                     </div>
-                    <div class="text">
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam, accusamus non ab porro atque nostrum cupiditate cum at quis vitae nulla odit obcaecati eveniet recusandae nesciunt totam nemo quia nam!</p>
+                    <div class="image">
+                        <img src="./images/comp-whiteboard.png" alt="image">
                     </div>
-                </article>
-                <svg class="icon" width="48" height="48">
-                    <use href="./images/icon.svg#icon-avaAlice"></use>
-                </svg>
+                    <div class="image">
+                        <img src="./images/hero-lib.jpg" alt="image">
+                    </div>
+                    <div class="image">
+                        <img src="./images/comp-tools.png" alt="image">
+                    </div>
+                    <div class="image">
+                        <img src="./images/it.jpg" alt="image">
+                    </div>
+
+                   
+                   
             </div>     
         </hero>
     </main>
     <footer>
+        &lt!-- this is a footer section--&gt
         <!-- цей блок зазвичай містить довідкову інформацію та контакти -->
     </footer>
 </body>

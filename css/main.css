@@ -50,10 +50,10 @@ body {
     color: var(--plainTextColor);
     font-size: 14px;
     letter-spacing: 0.03em;
-    background-image: url(/images/study.png);
+   /*  background-image: url(/images/study.png); */
     background-position: top center;
     background-repeat: no-repeat;
-    background-size: 1200px;
+    
     background-blend-mode: overlay;
 }
 
@@ -192,7 +192,7 @@ height: auto;
     .it-bg{
         background-repeat: no-repeat;
 
-        background-image: url(/images/it.svg);
+       /*  background-image: url(/images/it.svg); */
         background-size: contain;
     }
 
@@ -393,7 +393,7 @@ display: flex;
 .info{
     font-family: 'Pangolin', cursive;
     color: white;
-    background-color: blue;
+    background-color: red;
     display: block;
     display: flex;
     border: 1px solid white;

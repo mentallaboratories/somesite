@@ -1,0 +1,359 @@
+<!-- Натисни "!" для використання стандартного шаблону сайту -->
+<!-- браузеру повідомляється тип документу -->
+<!DOCTYPE html>
+<!-- документ міститься між цими тегами -->
+<html lang="en">
+    <!-- голова сайту містить інформацію для бекенду -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Напиши заголовок, який писатиметься на вкладці браузера -->
+    <title>homepage</title>
+
+<!-- Прив'язка Шрифтів GoogleFonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Finger+Paint&family=Freckle+Face&family=IBM+Plex+Mono:wght@400;600&family=Montserrat:wght@400;600&family=Pangolin&display=swap"
+        rel="stylesheet">
+
+<!-- Прив'язка стилів css -->
+<link rel="stylesheet" href="./css/normalize.css">
+<link rel="stylesheet" href="./css/reset.css">
+    <!-- <link rel="stylesheet" href="./css/main.css"> -->
+
+
+    <style>
+.home-button {
+  position: fixed;
+  top: 45px;
+  left: 5px;  /* Optional, change for alignment */
+  width: 80px;  /* Width of the round button */
+  height: 80px; /* Height of the round button */
+  border-radius: 50%;  /* Makes the button round */
+  background-color: rgba(255, 68, 0, 0.616); /* Light background color */
+  border: 3px solid white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds a shadow for style */
+  text-decoration: none;  /* Removes underline from link */
+  fill: white;
+}
+
+.home-button img {
+  width: 20px;  /* Sets the size of the image inside */
+  height: 20px;
+}
+
+.home-button:hover{
+  background-color: orange;
+  border-color: #333;
+  fill: #333;
+}
+
+.code {
+  display: none;
+}
+
+.navbar {
+  background-color: #333;
+  padding: 10px;
+  position: fixed;
+  width: 100%;
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navbar li {
+  margin-right: 20px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.navbar a:hover {
+  color: #f1c40f;
+}
+
+@media print {
+  nav {
+    display: none;
+  }
+  .info-card{
+    width: 100%;
+    height: 100%;
+  }
+  .home-button{
+    display: none;
+  }
+}
+
+
+        .info-card {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          width: 100%;
+          padding: 20px;
+          padding-top: 40px;
+          border: 1px solid #ccc;
+          border-radius: 8px;
+          background-color: #f9f9f9;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        /* Icon styling */
+        .icon {
+          flex-shrink: 0; /* Prevent the icon from shrinking */
+     
+          border: 4px solid green;
+          border-radius: 15px; /* Makes the icon circular */
+          padding: 40px;
+          background-color: lightgreen;
+          
+        }
+        
+        .icon img {
+          
+          min-width: 250px;
+          height: 250px;
+          
+        }
+        
+        /* Info content styling */
+        .info-content {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          flex-grow: 1; /* Allows the info content to take up available space */
+        }
+        
+        .name {
+          margin: 0;
+          font-size: 2.9em;
+          color: #333;
+          text-align: right; /* Align name to the top right */
+        }
+        
+        .info {
+          margin: 0;
+          color: #666;
+          font-size: 1.7em;
+          text-align: right; /* Align additional info to the bottom right */
+        }
+        
+        
+        
+        </style>
+        
+</head>
+    <!-- тіло сайту містить інформацію для фронтенду -->
+<body>
+
+
+    <header class="section">
+
+      <a href="index.html" class="home-button">
+        <svg class="logo-icon" width="58" height="58">
+          <use href="./images/icon.svg#icon-home"></use>
+      </svg> 
+      </a>
+
+      <nav class="navbar">
+        <ul>
+          
+          <li><a href="#arrow">Arrow</a></li>
+          <li><a href="#british-fl">British Flag</a></li>
+          <li><a href="#calendar">Calendar</a></li>
+          <li><a href="#diy">DIY</a></li>
+          <li><a href="#...">...</a></li>
+        </ul>
+      </nav>
+        
+    </header>
+
+
+
+
+
+
+    <main>
+        <!-- цей блок зазвичай містить основну інформацію сайту -->
+        <code class="code" style="background-color: rgb(7, 68, 237); color: aliceblue;">&lt!-- this is a cardset section--&gt
+        </code>
+
+      
+
+
+    
+
+
+                   
+      
+       
+        <div class="info-card" id="arrow">
+            <div class="icon">
+              <img src="\images\arrow.svg" alt="Icon">
+            </div>
+            <div class="info-content">
+              <h2 class="name">Arrow</h2>
+              <p class="info">
+                <!-- ### Report on Arrow Pointer Use Using Bono's Six Thinking Hats
+    
+                1. **White Hat**:  -->
+                
+                The arrow pointer is a key UI element used to navigate graphical user interfaces, originating from early computer systems.
+                <!-- 2. **Red Hat**: Users often feel more in control and confident when using an arrow pointer for precise selection tasks on screens.
+                3. **Black Hat**: The arrow pointer can sometimes be too small or imprecise, leading to frustration in certain high-density UI environments.
+                4. **Yellow Hat**: Arrow pointers provide intuitive, immediate feedback for user interactions, enhancing the usability of digital systems.
+                5. **Green Hat**: Innovations like animated or custom arrow pointers could further improve user engagement and system personalization.
+                6. **Blue Hat**: The use of the Six Hats method allows for a balanced analysis of the arrow pointer’s strengths, weaknesses, and opportunities for improvement.</p>
+             -->
+             </p>
+            </div>
+        </div>
+    
+    
+    
+        <div class="info-card" id="british-fl">
+            <div class="icon">
+              <img src="\images\british-fl.svg" alt="Icon">
+            </div>
+            <div class="info-content">
+              <h2 class="name">British Flag</h2>
+              <p class="info">
+                <!-- ### Report on Arrow Pointer Use Using Bono's Six Thinking Hats
+    
+                1. **White Hat**:  -->
+                
+               The British flag, known as the Union Jack, is a combination of three national flags representing England, Scotland, and Ireland.
+    
+    
+                <!-- **Red Hat**: The Union Jack evokes a strong sense of national pride and historical significance for many British people.
+    
+    **Black Hat**: The flag has faced criticism for being seen as a symbol of colonialism and imperialism in some regions.
+    
+    **Yellow Hat**: The Union Jack is a globally recognized symbol, often associated with stability and tradition.
+    
+    **Green Hat**: Designers have creatively adapted the Union Jack for fashion, branding, and modern art, symbolizing British influence.
+    
+    **Blue Hat**: Using Bono’s hats method helps assess the Union Jack from historical, emotional, and innovative perspectives. -->
+  </p>          
+  </div>
+        </div>
+
+
+        <div class="info-card" id="calendar">
+          <div class="icon">
+            <img src="\images\calendar.svg" alt="Icon">
+          </div>
+          <div class="info-content">
+            <h2 class="name">Calendar</h2>
+            <p class="info">
+              <!-- ### Report on Calendar Use Using Bono's Six Thinking Hats Method
+
+              1. **White Hat**: -->
+              
+              
+              Calendars are tools used to organize time, helping individuals and organizations plan and track events, appointments, and deadlines.  
+             
+             
+              <!-- 2. **Red Hat**: Many people feel a sense of control and reduced anxiety when using calendars to stay organized and manage their schedules.  
+              3. **Black Hat**: Calendars can become overwhelming if overfilled or mismanaged, leading to stress and missed appointments.  
+              4. **Yellow Hat**: Calendars improve productivity by providing structure and enabling better time management for both personal and professional life.  
+              5. **Green Hat**: Digital calendars offer creative features such as reminders, color-coding, and integration with other tools to optimize planning.  
+              6. **Blue Hat**: By systematically using calendars, one can create an effective routine, ensuring a balanced approach to time management.
+            -->
+            </p>
+            </div>
+        </div>
+
+        <div class="info-card" id="diy">
+          <div class="icon">
+            <img src="\images\icon-done.svg" alt="Icon">
+          </div>
+          <div class="info-content">
+            <h2 class="name">DIY</h2>
+            <p class="info">
+              
+              <!-- ### Report on DIY Using Bono's Six Thinking Hats Method -->
+
+              <!-- 1. **White Hat (Facts)**:  -->
+
+              DIY (Do It Yourself) involves creating, building, or repairing things by oneself without professional help, often supported by online tutorials or guides.  
+              
+              
+              <!-- 2. **Red Hat (Emotions)**: DIY projects can evoke a sense of accomplishment, creativity, and personal satisfaction.  
+              3. **Black Hat (Caution)**: There is a risk of failure, improper execution, or accidents, especially when lacking the necessary skills or tools.  
+              4. **Yellow Hat (Positives)**: DIY saves money, fosters learning, and allows for customization and personalization.  
+              5. **Green Hat (Creativity)**: It encourages innovation and problem-solving, turning simple materials into unique, functional items.  
+              6. **Blue Hat (Process)**: A structured approach to DIY requires planning, resource gathering, and step-by-step execution for successful results.
+            
+             -->
+            
+            
+            </p>
+            
+            
+            
+            
+            
+            </div>
+      </div>
+
+      <div class="info-card" id="...">
+        <div class="icon">
+          <img src="\images\ellipsis.svg" alt="Icon">
+        </div>
+        <div class="info-content">
+          <h2 class="name">...</h2>
+          <p class="info">
+            
+            <!-- ### Report on Ellipsis Use Using Bono's Six Thinking Hats Method -->
+
+            <!-- 1. **White Hat (Facts)**:  -->
+            
+            The ellipsis consists of three dots "…" used in writing to indicate omitted text or a trailing off of thought.  
+           
+            <!-- 2. **Red Hat (Emotions)**: The ellipsis often evokes feelings of suspense, hesitation, or uncertainty.  
+            3. **Black Hat (Caution)**: Overuse of ellipses can lead to confusion or lack of clarity in communication.  
+            4. **Yellow Hat (Benefits)**: The ellipsis is useful for creating a sense of mystery or leaving space for interpretation in writing.  
+            5. **Green Hat (Creativity)**: Ellipses can be used creatively in literature or dialogues to show fragmented thoughts or pauses in speech.  
+            6. **Blue Hat (Process)**: Structuring thoughts using ellipses requires careful consideration to ensure they contribute to the intended tone or meaning.
+          
+          
+          
+           -->
+          
+          
+          
+          
+          </p>
+          
+          
+          
+          
+          
+          </div>
+    </div>
+
+
+
+    </main>
+    <footer>
+       <code class="code"> &lt!-- this is a footer section--&gt</code>
+        
+    </footer>
+</body>
+</html>

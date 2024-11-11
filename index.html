@@ -26,247 +26,367 @@
 
 
     <style>
+.home-button {
+  z-index: 33;
+  position: fixed;
+  top: 45px;
+  left: 5px;  /* Optional, change for alignment */
+  width: 80px;  /* Width of the round button */
+  height: 80px; /* Height of the round button */
+  border-radius: 50%;  /* Makes the button round */
+  background-color: rgba(255, 68, 0, 0.616); /* Light background color */
+  border: 3px solid white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds a shadow for style */
+  text-decoration: none;  /* Removes underline from link */
+  fill: white;
+}
 
-        /* General Reset */
+.home-button img {
+  width: 20px;  /* Sets the size of the image inside */
+  height: 20px;
+}
+
+.home-button:hover{
+  background-color: orange;
+  border-color: #333;
+  fill: #333;
+}
+
+.code {
+  display: none;
+}
+
+.navbar {
+  background-color: #333;
+  padding: 10px;
+  position: fixed;
+  width: 100%;
+  max-height: 40px;
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navbar li {
+  margin-right: 20px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.navbar a:hover {
+  color: #f1c40f;
+}
+
+@media print {
+  nav {
+    display: none;
+  }
+  .info-card{
+    width: 100%;
+    height: 100%;
+  }
+  .home-button{
+    display: none;
+  }
+}
+
+
+        .info-card {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          width: 100%;
+          padding: 20px;
+          padding-top: 40px;
+          border: 1px solid #ccc;
+          border-radius: 8px;
+          background-color: #f9f9f9;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        /* Icon styling */
+        .icon {
+          flex-shrink: 0; /* Prevent the icon from shrinking */
+     
+          border: 4px solid green;
+          border-radius: 15px; /* Makes the icon circular */
+          padding: 40px;
+          background-color: lightgreen;
+          
+        }
+        
+        .icon img {
+          
+          min-width: 250px;
+          height: 250px;
+          
+        }
+        
+        /* Info content styling */
+        .info-content {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          flex-grow: 1; /* Allows the info content to take up available space */
+        }
+        
+        .name {
+          margin: 0;
+          font-size: 1.9em;
+          color: #333;
+          text-align: right; /* Align name to the top right */
+        }
+        
+        .info {
+          margin: 0;
+          color: #666;
+          font-size: 1.0em;
+          text-align: right; /* Align additional info to the bottom right */
+        }
+        
+        
+      
+
+/* General Reset */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+margin: 0;
+padding: 0;
+box-sizing: border-box;
 }
 
 body, html {
-    height: 100%;
-    font-family: Arial, sans-serif;
+height: 100%;
+font-family: Arial, sans-serif;
 }
 
 /* Hero Section Styling */
 .hero {
-    position: relative;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: url('images/house_colour.png') no-repeat center center/cover; /* Background Image */
-    overflow: hidden;
+height: 100vh;
+display: flex;
+align-items: center;
+justify-content: center;
+background: url('images/smphone.png') no-repeat center center/cover; /* Background Image */
+overflow: hidden;
 }
 
 /* Scroll effect for background */
 .hero::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: inherit;
-    /* animation: scrollBackground 30s linear infinite; */
-    z-index: -1; /* Puts it behind the content */
+content: '';
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: inherit;
+/* animation: scrollBackground 30s linear infinite; */
+z-index: -1; /* Puts it behind the content */
 }
 
 @keyframes scrollBackground {
-    0% {
-        background-position: 0% 0%;
-    }
-    100% {
-        background-position: 0% 100%;
-    }
+0% {
+background-position: 0% 0%;
+}
+100% {
+background-position: 0% 100%;
+}
 }
 
 /* Hero Content Styling */
 .content {
-    color: white;
-    text-align: center;
-    z-index: 1;
+color: white;
+text-align: center;
+z-index: 1;
+background-color: #f4433686;
+padding: 15px;
+border-radius: 15px;
 }
 
 .hero-heading {
-    font-size: 3rem;
-    margin-bottom: 20px;
+font-size: 3rem;
+margin-bottom: 20px;
 }
 
 .hero-list {
-    list-style-type: none;
-    margin-bottom: 20px;
+list-style-type: none;
+margin-bottom: 20px;
 }
 
 .hero-list li {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
+font-size: 1.5rem;
+margin-bottom: 10px;
 }
 
 /* Button Styling */
 .hero-btn {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #4CAF50;
-    color: white;
-    text-decoration: none;
-    font-size: 1.2rem;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
+display: inline-block;
+padding: 10px 20px;
+background-color: #4CAF50;
+color: white;
+text-decoration: none;
+font-size: 1.2rem;
+border-radius: 5px;
+transition: background-color 0.3s ease;
 }
 
 .hero-btn:hover {
-    background-color: #45a049;
+background-color: #45a049;
 }
 
 /* Additional Placeholder Section */
 #services {
-    padding: 50px;
-    background-color: #f4f4f4;
+padding: 50px;
+background-color: #f4f4f4;
 }
 
 
 /* Button to open the pop-up */
 #openPopupBtn {
-    padding: 10px 20px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    cursor: pointer;
-    font-size: 16px;
+padding: 10px 20px;
+background-color: #4CAF50;
+color: white;
+border: none;
+cursor: pointer;
+font-size: 16px;
 }
 
 #openPopupBtn:hover {
-    background-color: #45a049;
+background-color: #45a049;
 }
 
 /* Pop-up overlay styling */
 .overlay {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
-    justify-content: center;
-    align-items: center;
-    z-index: 1;
+display: none;
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+justify-content: center;
+align-items: center;
+z-index: 1;
 }
 
 /* Pop-up box */
 .popup {
-    background: rgba(255, 255, 255, 0.8); /* Transparent background for the pop-up */
-    padding: 20px;
-    border-radius: 8px;
-    width: 300px;
-    text-align: center;
+  margin: 1px auto;
+background: rgba(255, 255, 255, 0.8); /* Transparent background for the pop-up */
+padding: 20px;
+border-radius: 8px;
+width: 300px;
+text-align: center;
 }
 
 /* Close button inside the pop-up */
 .close-btn {
-    padding: 10px 20px;
-    background-color: #f44336;
-    color: white;
-    border: none;
-    cursor: pointer;
-    font-size: 16px;
+padding: 10px 20px;
+background-color: #f44336;
+color: white;
+border: none;
+cursor: pointer;
+font-size: 16px;
 }
 
 .close-btn:hover {
-    background-color: #d32f2f;
+background-color: #d32f2f;
 }
 
 
-    </style>
+        
+        </style>
+        
 </head>
     <!-- тіло сайту містить інформацію для фронтенду -->
 <body>
 
- <!-- Спливаючий блок інформації. Повідомлення -->
 
-   <!-- <div class="info"> 
-         
-        <svg class="icon" width="48" height="48"  style="fill: white;">
-        <use href="./images/icon.svg#icon-input"></use>
-    </svg>
+    <header class="section">
 
-    <svg class="icon" width="48" height="48"  style="fill: white;">
-        <use href="./images/icon.svg#icon-processing"></use>
-    </svg>
+    
 
-    <svg class="icon" width="48" height="48"  style="fill: white;">
-        <use href="./images/icon.svg#icon-output"></use>
-    </svg>
+     
 
-
-
-    <span class="note-info">This is an info block</span>
-    </div>  -->
+      <nav class="navbar">
+        <ul>
+          
+          <li><a href="user.html">User</a></li>
+          <li><a href="roadmap.html">Roadmap</a></li>
+          <li><a href="calendar.html">Calendar</a></li>
+          <li><a href="cardset.html">Portfolio</a></li>
+          <li><a href="emptypage.html">...</a></li>
+        </ul>
 
 
-
- <!-- хедер -->
-
-    <header class="section it-bg">
-
-
-       
-    <main>
         
-        <section class="hero">
-            <div class="content">
-                <h1 class="hero-heading">Welcome to Our Website</h1>
-                <ul class="hero-list">
-                    <li>High-Quality Products</li>
-                    <li>Exceptional Customer Service</li>
-                    <li>Fast and Reliable Delivery</li>
-                </ul>
-                <button id="openPopupBtn">Learn more</button>
-            </div>
-        </section>
+      </nav>
+      
+    </header>
+
+
+
+
+
+
+    <main>
+      <section class="hero">
+        <div class="content">
+            <h1 class="hero-heading">!Welcome to Somesite</h1>
+
+            <button id="openPopupBtn">Learn more?</button>
+        </div>
+    </section>
 
 <div id="popupOverlay" class="overlay">
-    <div class="popup">
-        <button id="closePopupBtn" class="close-btn">Close</button>
-    </div>
+<div class="content">
+<ul class="hero-list">
+    <li>User - сторінка користувача</li>
+    <li>Map - карта дій</li>
+    <li>Calendar - планування роботи</li>
+    <li>Storage - бібліотека та порфоліо</li>
+</ul>
+
+<div class="popup">
+    <button id="closePopupBtn" class="close-btn">Close</button>
+</div>
+</div>
 </div>
 
 
+
     </main>
-
-<!-- Нижній блок сайту -->
-
     <footer>
        <code class="code"> &lt!-- this is a footer section--&gt</code>
-        <!-- цей блок зазвичай містить довідкову інформацію та контакти -->
-        <h3>  <svg class="icon s input" width="48" height="48">
-            <use href="./images/icon.svg#icon-link"></use>
-        </svg> Сторінки сайту. Site map</h3>
-        <div class="nav article-nav">
-          
-            <a href="article.html" class="link current" >article.html</a>
-            <a href="/article/readme.html" class="link accent">readme.html</a>
-            <a href="cardset.html" class="link accent">cardset.html</a>
-            <a href="user.html" class="link it-font">user.html</a>
-            <a href="todo.html" class="link it-font">todo.html</a>
-            <a href="404.html" class="link it-font">404.html</a>
-            <a href="bloom.html" class="link it-font">bloom.html</a>
-            <a href="icon.html" class="link it-font">icon.html</a>
-            <a href="article.html" class="link it-font">article.html</a>
-        </div>
-    
+        
     </footer>
-
 
     <script>
 
-        // Get elements
+      // Get elements
 //const openPopupBtn = document.getElementById('openPopupBtn');
 const popupOverlay = document.getElementById('popupOverlay');
 const closePopupBtn = document.getElementById('closePopupBtn');
 
 // Function to open the pop-up
 openPopupBtn.addEventListener('click', () => {
-    popupOverlay.style.display = 'flex'; // Show pop-up
+  popupOverlay.style.display = 'flex'; // Show pop-up
 });
 
 // Function to close the pop-up
 closePopupBtn.addEventListener('click', () => {
-    popupOverlay.style.display = 'none'; // Hide pop-up
+  popupOverlay.style.display = 'none'; // Hide pop-up
 });
 
-    </script>
+  </script>
 </body>
 </html>

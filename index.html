@@ -207,7 +207,7 @@ background-position: 0% 100%;
 color: white;
 text-align: center;
 z-index: 1;
-background-color: #f4433686;
+background-color: #02754986;
 padding: 15px;
 border-radius: 15px;
 }
@@ -231,7 +231,7 @@ margin-bottom: 10px;
 .hero-btn {
 display: inline-block;
 padding: 10px 20px;
-background-color: #4CAF50;
+background-color: #cc0d0d;
 color: white;
 text-decoration: none;
 font-size: 1.2rem;
@@ -253,7 +253,7 @@ background-color: #f4f4f4;
 /* Button to open the pop-up */
 #openPopupBtn {
 padding: 10px 20px;
-background-color: #4CAF50;
+background-color: #a10e0e;
 color: white;
 border: none;
 cursor: pointer;
@@ -342,6 +342,12 @@ background-color: #d32f2f;
       <section class="hero">
         <div class="content">
             <h1 class="hero-heading">!Welcome to Somesite</h1>
+            <p>
+              Ласкаво просимо до somesite (some -> якийсь, site -> сайт). 
+              Ви знаходитеся на домашній сторінці (homepage). Щоб дізнатися 
+              більше про сайт натисніть Learn more?
+
+            </p>
 
             <button id="openPopupBtn">Learn more?</button>
         </div>
@@ -350,10 +356,11 @@ background-color: #d32f2f;
 <div id="popupOverlay" class="overlay">
 <div class="content">
 <ul class="hero-list">
-    <li>User - сторінка користувача</li>
-    <li>Map - карта дій</li>
-    <li>Calendar - планування роботи</li>
-    <li>Storage - бібліотека та порфоліо</li>
+    <li><h2>User</h2><p> - сторінка користувача</p></li>
+    <li><h2>Roadmap</h2><p>- карта дій користувача</p> </li>
+    <li><h2>Calendar</h2><p>- планування роботи та дозвілля</p> </li>
+    <li><h2>Portfolio</h2><p> - резюме та порфоліо робіт</p></li>
+    <li><h2>...</h2><p> - настройки</p></li>
 </ul>
 
 <div class="popup">
